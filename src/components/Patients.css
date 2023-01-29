@@ -1,0 +1,12 @@
+.providerDiv {
+    font-weight: 200;
+
+    border-radius: 6px;
+}
+.incrementBtn {
+    margin-left: 20px;
+}
+h2 {
+    font-style: italic;
+    font-size: 40px;
+}

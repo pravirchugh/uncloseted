@@ -2,7 +2,7 @@
 import './App.css';
 import MainPage from './components/MainPage.js';
 import Patients from './components/Patients.js';
-import Providers from './components/Providers.js';
+import Providers from './Providers.js';
 
 import {
   BrowserRouter as Router,
@@ -19,9 +19,15 @@ function App() {
       
         {/* Potential Routes listed here: */}
         <Routes> 
+<<<<<<< HEAD
+          <Route path="/" element={<MainPage/>}></Route>
+          <Route path="/patients" element={<Patients/>}></Route>
+          <Route path="/providers" element={<Providers/>}></Route>
+=======
           <Route path="/" element={<MainPage></MainPage>}></Route>
-          <Route path="/patients" element={<Patients></Patients>}></Route>
-          <Route path="/providers" element={<Providers></Providers>}></Route>
+          <Route path="/patients" element={<Patients role="patient"></Patients>}></Route>
+          <Route path="/providers" element={<Patients role="provider"></Patients>}></Route>
+>>>>>>> refs/remotes/origin/main
         </Routes>
 
       
