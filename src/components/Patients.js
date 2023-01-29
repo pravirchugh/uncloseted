@@ -15,6 +15,7 @@ function Patients() {
         [0, "John A.", 3, 2, 1, 2],
         [1, "Serena B.", 4, 3, 4, 2],
         [2, "Tom C.", 2, 2, 1, 2],
+        
     ]);
     
 
@@ -57,16 +58,17 @@ function Patients() {
                 <button className='button'>Main Page</button>
             </Link> 
 
-            <div style={{margin: 'auto', display: "flex", justifyContent: "center"}}>
+            <div style={{margin: 'auto', display: "flex", justifyContent: "center", flexDirection: "column"}}>
                 {providers.map(
 
-                    (provider) => { return <div className="providerDiv">
-                        {provider[1]} 
+                    (provider) => { return <div className="providerDiv" style={{display: "flex", flexDirection: "row"}}>
+                        <h2>{provider[1]}</h2>
                         
                         <button onClick={() => increaseCount(provider[0])}>I had this provider - {provider[2]}</button>
                         <button onClick={() => increaseEquitable(provider[0])}>This provider was equitable - {provider[3]}</button>
                         <button onClick={() => increaseKnowledge(provider[0])}>This provider was knowledgable - {provider[4]}</button>
                         <button onClick={() => increaseCompassion(provider[0])}>This provider was compassionate - {provider[5]}</button>
+                        <br></br>
                         
                         </div>
                     })}
