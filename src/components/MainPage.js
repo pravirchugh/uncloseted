@@ -20,6 +20,8 @@ function MainPage() {
             </div>
            
             <h1 style={{textAlign: "center", fontFamily: "lora"}}>UNCLOSET</h1>
+
+            <p style={{textAlign: "center"}}>Connecting LGBTQ+ individuals to medical professionals.</p>
       
             <p style={{textAlign: "center"}}>Find the right doctor for you and write your own reviews!</p>
 
