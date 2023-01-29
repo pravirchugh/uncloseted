@@ -40,12 +40,12 @@ function Patients(props) {
         let newProviders = [...providers];
         // console.log(newProviders[index][2]);
         if(!equitableChecked){
-            newProviders[index][3] = Math.min(newProviders[index][3] + 1, newProviders[index][2]);
+            newProviders[index][3] = Math.min(newProviders[index][3] + 1);
             setEquitableChecked(true);
 
                 }
         else{
-            newProviders[index][3] = Math.min(newProviders[index][3] - 1, newProviders[index][2]);
+            newProviders[index][3] = Math.min(newProviders[index][3] - 1);
             setEquitableChecked(false);
         }
 
@@ -58,14 +58,13 @@ function Patients(props) {
         let newProviders = [...providers];
         if(!knowledgeChecked){
         // console.log(newProviders[index][2]);
-            newProviders[index][4] = Math.min(newProviders[index][4] + 1, newProviders[index][2]);
+            newProviders[index][4] = Math.min(newProviders[index][4] + 1);
             setKnowledgeChecked(true);
         }
         else{
-            newProviders[index][4] = Math.min(newProviders[index][4] - 1, newProviders[index][2]);
+            newProviders[index][4] = Math.min(newProviders[index][4] - 1);
             setKnowledgeChecked(false);
         }
-        setProviders(newProviders);
 
         // console.log(newProviders[index][2]);
         setProviders(newProviders);
@@ -76,23 +75,28 @@ function Patients(props) {
         let newProviders = [...providers];
         // console.log(newProviders[index][2]);
         if(!compassionChecked){
-            newProviders[index][5] = Math.min(newProviders[index][5] + 1, newProviders[index][2]);
+            newProviders[index][5] = Math.min(newProviders[index][5] + 1);
             setCompassionChecked( true);
         }
         else{
-            newProviders[index][5] = Math.min(newProviders[index][5] - 1, newProviders[index][2]);
+            newProviders[index][5] = Math.min(newProviders[index][5] - 1);
             setCompassionChecked( false);
         }
-        setProviders(newProviders);
         setProviders(newProviders);
     }
 
     function registerNewProvider(txt) {
         let newProviders = [...providers];
         console.log(txt);
+        setProviders(newProviders);
+        setCountChecked(false);
+        setKnowledgeChecked(false);
+        setCompassionChecked(false);
+        setEquitableChecked(false);
         let lastArray = [providers.length, txt, 0, 0, 0, 0];
         newProviders.push(lastArray);
-        setProviders(newProviders);
+
+
     }
 
     return (
