@@ -7,13 +7,20 @@ import {
     Link
   } from "react-router-dom";
 
-let [idx, setIdx] = useState([]);
-let [names, setNames] = useState([]);
-let [equitable, setEquitable] = useState([]);
-let [understanding, setUnderstanding] = useState([]);
-let [kind, setKind] = useState([]);
 
 
+<<<<<<< HEAD
+=======
+function Patients(props) {
+
+    let [providers, setProviders] = useState([
+        [0, "John A.", 3, 2, 1, 2],
+        [1, "Serena B.", 4, 3, 4, 2],
+        [2, "Tom C.", 2, 2, 1, 2],
+    ]);
+    
+
+>>>>>>> 707d0df26c1c325de8d3e9ed4d268cd6ff1bee9d
     function increaseCount(index) {
         // console.log(index);
         let newProviders = [...providers];
@@ -60,17 +67,38 @@ let [kind, setKind] = useState([]);
                 <button className='button'>Main Page</button>
             </Link> 
 
-            <div style={{margin: 'auto', width: '60%'}}>
-            {idx.map(
+        
 
-                (experience) => { return 
+            <div style={{margin: 'auto', display: "flex", justifyContent: "center", flexDirection: "column"}}>
+            {providers.map(
 
-                    <div>
-                        
+                (provider) => { return <div className="providerDiv" style={{display: "flex", flexDirection: "row"}}>
+                    <h2 style={{marginRight: "20px"}}>{provider[1]}</h2>
+
+                    
+                    <button onClick={() => increaseCount(provider[0])} className="incrementBtn">I had this provider - {provider[2]}</button>
+                    <button onClick={() => increaseEquitable(provider[0])} className="incrementBtn">This provider was equitable - {provider[3]}</button>
+                    <button onClick={() => increaseKnowledge(provider[0])} className="incrementBtn">This provider was knowledgable - {provider[4]}</button>
+                    <button onClick={() => increaseCompassion(provider[0])} className="incrementBtn">This provider was compassionate - {provider[5]}</button>
+                    <br></br>
+                    
                     </div>
-            })}
+                })}
             </div>
 
+            
+
+           
+
+            <div>
+                <h2>Add a provider:</h2>
+
+                <input type="text" id="name1" placeholder='Name'></input>
+
+                <button type="submit" onClick={() => registerNewProvider(document.getElementById("name1").value)}>Submit.</button>
+            </div>
+
+           
         </>
 
 
