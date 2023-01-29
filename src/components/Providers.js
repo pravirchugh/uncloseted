@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import {providers} from './Patients.js';
+import './Patients.js';
 
 import {
     BrowserRouter as Router,
@@ -11,6 +11,7 @@ import {
   } from "react-router-dom";
 
 function Providers() {
+    
     return (
         <>
             <Link to="/">
