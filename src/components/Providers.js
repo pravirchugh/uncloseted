@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import './index.css';
-import {providers} from './components/Patients.js';
+import './Patients.css';
+
 
 import {
     BrowserRouter as Router,
@@ -23,7 +23,7 @@ import {
         <>
         <text className='errMsg' style={{display: showErr ? 'block': 'none'  }}>Please enter your name!</text>
         <br/><br/><br/><br/>
-        <h1 name="preSubmit" className='headingProviders' style={{display: showStats ? 'none': 'block'  }}>Enter your name:</h1>
+        <h1 name="preSubmit" className='headingProviders' style={{display: showStats ? 'none': 'block'  }}>Enter your name here:</h1>
         <div className='center' style={{display: showStats? 'none': 'block' }}>
         <input id="inputBox" style={{display: showStats? 'none': 'block'  }}></input><br/><br/>
         <button name="preSubmit" className='button' style={{display: showStats? 'none': 'block'  }} onClick={() => submitClick()} >Submit</button>
