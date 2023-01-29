@@ -21,7 +21,7 @@ import {
 
     return (
         <>
-        <text className='errMsg' style={{display: showErr ? 'block': 'none'  }}>Please enter your name!</text>
+        <text className='errMsg' style={{display: showErr ? 'block': 'none'  }}>Please enter your name below!</text>
         <br/><br/><br/><br/>
         <h1 name="preSubmit" className='headingProviders' style={{display: showStats ? 'none': 'block'  }}>Enter your name here:</h1>
         <div className='center' style={{display: showStats? 'none': 'block' }}>
