@@ -8,7 +8,6 @@ import {
   } from "react-router-dom";
   
   function Providers() {
-   
     const [showStats, changeShowStats] = useState(false);
     const [showErr, changeShowErr] = useState(false);
     function submitClick(){
@@ -18,7 +17,6 @@ import {
         }
         changeShowErr(false);
         changeShowStats(true);
-
     }
 
     return (
@@ -67,12 +65,7 @@ import {
         <button className='button'>Main Page</button>
     </Link> 
     </div>
-        
-        </>
-
-
-
-        );
-    
+    </>
+    );
 }
 export default Providers;
