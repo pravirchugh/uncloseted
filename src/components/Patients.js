@@ -57,10 +57,10 @@ function Patients(props) {
 
     return (
         <>
-            <Link to="/">
-                <button className='button'>Main Page</button>
-            </Link> 
-            <div style={{margin: 'auto', display: "flex", justifyContent: "center", flexDirection: "column"}}>
+            <br></br>
+
+            <h1 style={{textAlign: "center"}}>Patient Portal</h1>
+            <div style={{display: "flex", alignItems: "center", flexDirection: "column"}}>
             {providers.map(
                 (provider) => { return <div className="providerDiv" style={{display: "flex", flexDirection: "row"}}>
                     <h2 style={{marginRight: "20px"}}>{provider[1]}</h2>         
@@ -73,9 +73,18 @@ function Patients(props) {
                 })}
             </div>
             <div>
-                <h2>Add a provider:</h2>
-                <input type="text" id="name1" placeholder='Name'></input>
-                <button type="submit" onClick={() => registerNewProvider(document.getElementById("name1").value)}>Submit.</button>
+                <h2 style={{textAlign: "center"}}>Add a provider:</h2>
+                <div style={{display: "flex", justifyContent: "center"}}>
+                    <input type="text" id="name1" placeholder='Name'></input>
+                    <button type="submit" onClick={() => registerNewProvider(document.getElementById("name1").value)}>Submit.</button>
+                </div>
+              </div>
+
+                <br></br>
+            <div style={{display: "flex", justifyContent: "center"}}>
+                <Link to="/">
+                    <button className='button'>Main Page</button>
+                </Link> 
             </div>
         </>
     )
