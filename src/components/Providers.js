@@ -33,7 +33,7 @@ import {
     <div className="ratingsContainer" style={{display: showStats? 'block': 'none' }}>
         <div>
         <div className="providerInfo" style={{display: showStats? 'block': 'none' }} >
-            <text>Inclusiveness</text>
+            <text>Knowledge</text>
      
         </div>
         <div className="providerInfo" style={{display: showStats? 'block': 'none'}}>
@@ -42,7 +42,7 @@ import {
         </div>
         <div>
         <br/><br/><div className="providerInfo" style={{display: showStats? 'block': 'none' }}>
-            <text>Knowledge</text>
+            <text>Compassion</text>
      
         </div>
         <div className="providerInfo" style={{display: showStats? 'block': 'none' }}>
@@ -51,7 +51,7 @@ import {
         </div>
         <div>
         <br/><br/><div className="providerInfo" style={{display: showStats? 'block': 'none' }}>
-            <text>Empathy</text>
+            <text>Equitable</text>
      
         </div>
         <div className="providerInfo" style={{display: showStats? 'block': 'none' }}>

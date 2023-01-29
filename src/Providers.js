@@ -8,7 +8,6 @@ import {
   } from "react-router-dom";
   
   function Providers() {
-   
     const [showStats, changeShowStats] = useState(false);
     const [showErr, changeShowErr] = useState(false);
     function submitClick(){
@@ -18,7 +17,6 @@ import {
         }
         changeShowErr(false);
         changeShowStats(true);
-
     }
 
     return (
@@ -35,7 +33,7 @@ import {
     <div className="ratingsContainer" style={{display: showStats? 'block': 'none' }}>
         <div>
         <div className="providerInfo" style={{display: showStats? 'block': 'none' }} >
-            <text>Inclusiveness</text>
+            <text>Knowledge</text>
      
         </div>
         <div className="providerInfo" style={{display: showStats? 'block': 'none'}}>
@@ -44,7 +42,7 @@ import {
         </div>
         <div>
         <br/><br/><div className="providerInfo" style={{display: showStats? 'block': 'none' }}>
-            <text>Knowledge</text>
+            <text>Compassion</text>
      
         </div>
         <div className="providerInfo" style={{display: showStats? 'block': 'none' }}>
@@ -53,7 +51,7 @@ import {
         </div>
         <div>
         <br/><br/><div className="providerInfo" style={{display: showStats? 'block': 'none' }}>
-            <text>Empathy</text>
+            <text>Equitability</text>
      
         </div>
         <div className="providerInfo" style={{display: showStats? 'block': 'none' }}>
@@ -67,12 +65,7 @@ import {
         <button className='button'>Main Page</button>
     </Link> 
     </div>
-        
-        </>
-
-
-
-        );
-    
+    </>
+    );
 }
 export default Providers;

@@ -8,6 +8,7 @@ import {
   } from "react-router-dom";
 
 function Patients(props) {
+    
     let [providers, setProviders] = useState([
         [0, "John A.", 3, 2, 1, 2],
         [1, "Serena B.", 4, 3, 4, 2],
@@ -78,5 +79,39 @@ function Patients(props) {
             </div>
         </>
     )
+    
+   /*
+   function doctor(docName, knowledgeVal, compassionVal, equitableVal){
+         return {
+              name: docName,
+              knowledge: knowledgeVal,
+              compassion: compassionVal,
+              equitability: equitableVal
+         }
+   }
+   let docArray = [doctor("John", 3, 2, 1), doctor("Serena", 4, 3, 4), doctor("Tom", 2, 2, 1)];
+    let docList = "";
+
+   useEffect(() => {
+    docArray[0].name = "peter";
+   }, docArray);
+
+   function registerNewProvider(txt) {
+        docArray[0].name = "txt";
+        docArray.push(doctor("txt", 0, 0, 0));
+
+    }
+
+
+    return (
+        <>
+        <text>{docArray[0].name}</text>
+        
+        <h2>Add a provider:</h2>
+        <input type="text" id="name1" placeholder='Name'></input>
+        <button type="submit" onClick={registerNewProvider(document.getElementById('name1').textContent)}>Submit</button>
+        </>
+        );
+        */
 }
 export default Patients;
