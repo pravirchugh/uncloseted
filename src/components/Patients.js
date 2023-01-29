@@ -15,7 +15,6 @@ function Patients() {
         [0, "John A.", 3, 2, 1, 2],
         [1, "Serena B.", 4, 3, 4, 2],
         [2, "Tom C.", 2, 2, 1, 2],
-        
     ]);
     
 
