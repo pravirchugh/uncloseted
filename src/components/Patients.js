@@ -92,11 +92,10 @@ function Patients(props) {
 
                 <input type="text" id="name1" placeholder='Name'></input>
 
-                <button type="submit" onClick={() => registerNewProvider(document.getElementById("name1").value)}>Submit</button>
+                <button type="submit" onClick={() => registerNewProvider(document.getElementById("name1").value)}>Submit.</button>
             </div>
 
            
-
         </>
 
 
