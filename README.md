@@ -1,5 +1,11 @@
 # Getting Started with Create React App
 
+Team Members:
+- Pravir Chugh
+- Brandon Tran
+- Michelle Kim
+- Matthew Guan
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
