@@ -31,7 +31,7 @@ function Patients() {
         // console.log(index);
         let newProviders = [...providers];
         // console.log(newProviders[index][2]);
-        newProviders[index][3] = newProviders[index][3] + 1;
+        newProviders[index][3] = Math.min(newProviders[index][3] + 1, newProviders[index][2]);
         setProviders(newProviders);
     }
 
@@ -39,7 +39,7 @@ function Patients() {
         // console.log(index);
         let newProviders = [...providers];
         // console.log(newProviders[index][2]);
-        newProviders[index][4] = newProviders[index][4] + 1;
+        newProviders[index][4] = Math.min(newProviders[index][4] + 1, newProviders[index][2]);
         setProviders(newProviders);
     }
 
@@ -47,7 +47,7 @@ function Patients() {
         // console.log(index);
         let newProviders = [...providers];
         // console.log(newProviders[index][2]);
-        newProviders[index][5] = newProviders[index][5] + 1;
+        newProviders[index][5] = Math.min(newProviders[index][5] + 1, newProviders[index][2]);
         setProviders(newProviders);
     }
 
