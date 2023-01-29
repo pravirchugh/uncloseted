@@ -68,7 +68,8 @@ function Patients(props) {
             // console.log(index);
             let newProviders = [...props.providers];
             // console.log(newProviders[index][2]);
-            newProviders[index][5] = Math.min(newProviders[index][5] + 1, newProviders[index][2]);
+            newProviders[index][5] = newProviders[index][5] + 1;
+            newProviders[index][9] = !newProviders[index][9];
             props.setProviders(newProviders);
         } else {
             let newProviders = [...props.providers];
