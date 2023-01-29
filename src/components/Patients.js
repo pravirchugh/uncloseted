@@ -106,11 +106,11 @@ function Patients(props) {
                 })}
             </div>
             <div>
-                <h2 style={{textAlign: "center"}}>Add a provider:</h2>
+                {/* <h2 style={{textAlign: "center"}}>Add a provider:</h2>
                 <div style={{display: "flex", justifyContent: "center"}}>
                     <input type="text" id="name1" placeholder='Name'></input>
                     <button type="submit" onClick={() => registerNewProvider(document.getElementById("name1").value)}>Submit.</button>
-                </div>
+                </div> */}
               </div>
 
                 <br></br>
