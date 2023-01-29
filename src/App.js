@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import MainPage from './components/MainPage.js';
 import Patients from './components/Patients.js';
-import Providers from './Providers.js';
+import Providers from './components/Providers.js';
 
 import {
   BrowserRouter as Router,
