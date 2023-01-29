@@ -16,7 +16,7 @@ function MainPage() {
             
             <br></br>
             <div style={{display: "flex", justifyContent: "center"}}>
-                <img class="logo" src={logo}></img>
+                <img className="logo" src={logo}></img>
             </div>
            
             <h1 style={{textAlign: "center", fontFamily: "lora"}}>UNCLOSET</h1>

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import MainPage from './components/MainPage.js';
 import Patients from './components/Patients.js';
-import Providers from './Providers.js';
+import Providers from './components/Providers.js';
 
 import {
   BrowserRouter as Router,
@@ -14,9 +14,9 @@ import {
 
 function App() {
   let [prov, setProv] = useState([
-    [0, "John A.", 3, 2, 1, 2],
-    [1, "Serena B.", 4, 3, 4, 2],
-    [2, "Tom C.", 2, 2, 1, 2],
+    [0, "John A.", 3, 2, 1, 2, false, false, false, false],
+    [1, "Serena B.", 4, 3, 4, 2, false, false, false, false],
+    [2, "Tom C.", 2, 2, 1, 2, false, false, false, false],
   ]);
   return (
     
