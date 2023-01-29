@@ -96,10 +96,10 @@ function Patients(props) {
             {props.providers.map(
                 (provider) => { return <div className="providerDiv" style={{display: "flex", flexDirection: "row"}}>
                     <h2 style={{marginRight: "20px"}}>{provider[1]}</h2>         
-                    <button onClick={() => increaseCount(provider[0])} className="incrementBtn">I had this provider - {provider[2]}</button>
-                    <button onClick={() => increaseEquitable(provider[0])} className="incrementBtn">This provider was equitable - {provider[3]}</button>
-                    <button onClick={() => increaseKnowledge(provider[0])} className="incrementBtn">This provider was knowledgable - {provider[4]}</button>
-                    <button onClick={() => increaseCompassion(provider[0])} className="incrementBtn">This provider was compassionate - {provider[5]}</button>
+                    <button onClick={() => increaseCount(provider[0])} className="incrementBtn">I had this provider - <b>{provider[2]}</b></button>
+                    <button onClick={() => increaseEquitable(provider[0])} className="incrementBtn">This provider was equitable - <b>{provider[3]}</b></button>
+                    <button onClick={() => increaseKnowledge(provider[0])} className="incrementBtn">This provider was knowledgable - <b>{provider[4]}</b></button>
+                    <button onClick={() => increaseCompassion(provider[0])} className="incrementBtn">This provider was compassionate - <b>{provider[5]}</b></button>
                     <br></br>                 
                     </div>
                 })}
