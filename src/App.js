@@ -20,8 +20,8 @@ function App() {
         {/* Potential Routes listed here: */}
         <Routes> 
           <Route path="/" element={<MainPage></MainPage>}></Route>
-          <Route path="/patients" element={<Patients></Patients>}></Route>
-          <Route path="/providers" element={<Providers></Providers>}></Route>
+          <Route path="/patients" element={<Patients role="patient"></Patients>}></Route>
+          <Route path="/providers" element={<Patients role="provider"></Patients>}></Route>
         </Routes>
 
       

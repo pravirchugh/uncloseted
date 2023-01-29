@@ -9,7 +9,7 @@ import {
 
 
 
-function Patients() {
+function Patients(props) {
 
     let [providers, setProviders] = useState([
         [0, "John A.", 3, 2, 1, 2],
@@ -50,6 +50,13 @@ function Patients() {
         setProviders(newProviders);
     }
 
+    function registerNewProvider(txt) {
+        let newProviders = [...providers];
+        console.log(txt);
+        let lastArray = [providers.length, txt, 0, 0, 0];
+        newProviders.push(lastArray);
+        setProviders(newProviders);
+    }
 
     return (
         <>
@@ -57,21 +64,38 @@ function Patients() {
                 <button className='button'>Main Page</button>
             </Link> 
 
-            <div style={{margin: 'auto', display: "flex", justifyContent: "center", flexDirection: "column"}}>
-                {providers.map(
+        
 
-                    (provider) => { return <div className="providerDiv" style={{display: "flex", flexDirection: "row"}}>
-                        <h2>{provider[1]}</h2>
-                        
-                        <button onClick={() => increaseCount(provider[0])}>I had this provider - {provider[2]}</button>
-                        <button onClick={() => increaseEquitable(provider[0])}>This provider was equitable - {provider[3]}</button>
-                        <button onClick={() => increaseKnowledge(provider[0])}>This provider was knowledgable - {provider[4]}</button>
-                        <button onClick={() => increaseCompassion(provider[0])}>This provider was compassionate - {provider[5]}</button>
-                        <br></br>
-                        
-                        </div>
-                    })}
+            <div style={{margin: 'auto', display: "flex", justifyContent: "center", flexDirection: "column"}}>
+            {providers.map(
+
+                (provider) => { return <div className="providerDiv" style={{display: "flex", flexDirection: "row"}}>
+                    <h2 style={{marginRight: "20px"}}>{provider[1]}</h2>
+
+                    
+                    <button onClick={() => increaseCount(provider[0])} className="incrementBtn">I had this provider - {provider[2]}</button>
+                    <button onClick={() => increaseEquitable(provider[0])} className="incrementBtn">This provider was equitable - {provider[3]}</button>
+                    <button onClick={() => increaseKnowledge(provider[0])} className="incrementBtn">This provider was knowledgable - {provider[4]}</button>
+                    <button onClick={() => increaseCompassion(provider[0])} className="incrementBtn">This provider was compassionate - {provider[5]}</button>
+                    <br></br>
+                    
+                    </div>
+                })}
             </div>
+
+            
+
+           
+
+            <div>
+                <h2>Add a provider:</h2>
+
+                <input type="text" id="name1" placeholder='Name'></input>
+
+                <button type="submit" onClick={() => registerNewProvider(document.getElementById("name1").value)}>Submit</button>
+            </div>
+
+           
 
         </>
 
