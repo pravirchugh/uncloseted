@@ -53,7 +53,7 @@ function Patients(props) {
     function registerNewProvider(txt) {
         let newProviders = [...providers];
         console.log(txt);
-        let lastArray = [providers.length, txt, 0, 0, 0];
+        let lastArray = [providers.length, txt, 0, 0, 0, 0];
         newProviders.push(lastArray);
         setProviders(newProviders);
     }
