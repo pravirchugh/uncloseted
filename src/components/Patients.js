@@ -6,7 +6,7 @@ import {
     useLocation,
     Link
   } from "react-router-dom";
-
+import "./Patients.css";
 function Patients(props) {
     
     function increaseCount(index) {
