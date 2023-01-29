@@ -11,7 +11,11 @@ import {
 
 function Patients() {
 
-    let [providers, setProviders] = useState([[0, "John", 3, 2, 1, 2]]);
+    let [providers, setProviders] = useState([
+        [0, "John A.", 3, 2, 1, 2],
+        [1, "Serena B.", 4, 3, 4, 2],
+        [2, "Tom C.", 2, 2, 1, 2],
+    ]);
     
 
     function increaseCount(index) {
@@ -53,11 +57,19 @@ function Patients() {
                 <button className='button'>Main Page</button>
             </Link> 
 
-            <div style={{margin: 'auto', width: '60%'}}>
+            <div style={{margin: 'auto', display: "flex", justifyContent: "center"}}>
                 {providers.map(
 
-                    (provider) => { return <div>{provider[1]} <button onClick={() => increaseCount(provider[0])}>I had this provider - {provider[2]}</button><button onClick={() => increaseEquitable(provider[0])}>This provider was equitable - {provider[3]}</button> <button onClick={() => increaseKnowledge(provider[0])}>This provider was knowledgable - {provider[4]}</button> <button onClick={() => increaseCompassion(provider[0])}>This provider was compassionate - {provider[5]}</button></div>
-                })}
+                    (provider) => { return <div className="providerDiv">
+                        {provider[1]} 
+                        
+                        <button onClick={() => increaseCount(provider[0])}>I had this provider - {provider[2]}</button>
+                        <button onClick={() => increaseEquitable(provider[0])}>This provider was equitable - {provider[3]}</button>
+                        <button onClick={() => increaseKnowledge(provider[0])}>This provider was knowledgable - {provider[4]}</button>
+                        <button onClick={() => increaseCompassion(provider[0])}>This provider was compassionate - {provider[5]}</button>
+                        
+                        </div>
+                    })}
             </div>
 
         </>
