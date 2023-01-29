@@ -51,7 +51,7 @@ import {
         </div>
         <div>
         <br/><br/><div className="providerInfo" style={{display: showStats? 'block': 'none' }}>
-            <text>Equitable</text>
+            <text>Equitability</text>
      
         </div>
         <div className="providerInfo" style={{display: showStats? 'block': 'none' }}>
